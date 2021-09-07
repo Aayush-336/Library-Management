@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="643.0" prefWidth="733.0"
+            style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8"
+            fx:controller="studentloginController" fx:id="mainPane">
+    <children>
+        <HBox layoutX="57.0" layoutY="58.0"/>
+        <TextField fx:id="idtextfield" layoutX="206.0" layoutY="109.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="Enter Enrollment No."/>
+        <TextField fx:id="firstnametextfield" layoutX="206.0" layoutY="159.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="Enter your First Name"/>
+        <TextField fx:id="middlenametextfield" layoutX="206.0" layoutY="210.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="Enter your middle name"/>
+        <TextField fx:id="lastnametextfield" layoutX="206.0" layoutY="260.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="Enter your last name"/>
+        <TextField fx:id="usernametextfield" layoutX="206.0" layoutY="306.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="create  username"/>
+        <TextField fx:id="branchtextfield" layoutX="206.0" layoutY="354.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="Enter Branch"/>
+        <TextField fx:id="semtextfield" layoutX="206.0" layoutY="396.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="Enter Semister"/>
+        <PasswordField fx:id="setpasswordfield" layoutX="206.0" layoutY="444.0" prefHeight="31.0" prefWidth="407.0"
+                       promptText="Create password"/>
+        <PasswordField fx:id="confirmpassword" layoutX="206.0" layoutY="487.0" prefHeight="31.0" prefWidth="407.0"
+                       promptText="Confirm password"/>
+        <Button fx:id="registerbutton" layoutX="76.0" layoutY="572.0" mnemonicParsing="false"
+                onAction="#registerbuttonOnAction" prefHeight="31.0" prefWidth="275.0" text="Register"/>
+        <Button fx:id="cancelbutton" layoutX="380.0" layoutY="572.0" mnemonicParsing="false"
+                onAction="#cancelbuttonOnAction" prefHeight="31.0" prefWidth="275.0" text="Close"/>
+        <Label layoutX="28.0" layoutY="159.0" prefHeight="31.0" prefWidth="95.0" text="First Name">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="210.0" prefHeight="31.0" prefWidth="114.0" text="Middle Name">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="260.0" prefHeight="31.0" prefWidth="95.0" text="Last Name">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="306.0" prefHeight="31.0" prefWidth="95.0" text="Username">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="34.0" layoutY="444.0" prefHeight="31.0" prefWidth="84.0" text="Password">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="487.0" prefHeight="31.0" prefWidth="152.0" text="Confirm password">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="109.0" prefHeight="31.0" prefWidth="152.0" text="Enrollment No.">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutY="-2.0" prefHeight="80.0" prefWidth="732.0"
+               style="-fx-background-color: lightblue;" text="Student Page">
+            <font>
+                <Font name="System Bold" size="36.0"/>
+            </font>
+            <textFill>
+                <LinearGradient endX="0.7621359223300972" endY="0.9611650485436893" startX="0.7766990291262136"
+                                startY="0.30582524271844663">
+                    <stops>
+                        <Stop color="#f51c03"/>
+                        <Stop color="#430beb" offset="1.0"/>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <Label fx:id="registrationmessegelabel" alignment="CENTER" layoutX="44.0" layoutY="68.0" prefHeight="21.0"
+               prefWidth="637.0" textFill="#e10606">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Label>
+        <Label fx:id="pswmatching" alignment="CENTER" layoutX="122.0" layoutY="531.0" prefHeight="27.0"
+               prefWidth="506.0" textFill="#e10606">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="29.0" layoutY="354.0" prefHeight="31.0" prefWidth="95.0" text="Branch">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="29.0" layoutY="396.0" prefHeight="31.0" prefWidth="95.0" text="Semister">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

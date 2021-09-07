@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="anc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="696.0" prefWidth="1080.0" stylesheets="@cssfile.css"
+            xmlns="http://javafx.com/javafx/8" fx:controller="rootfxml">
+
+    <children>
+        <VBox fx:id="vbox" prefHeight="700.0" prefWidth="180.0">
+            <children>
+                <Label fx:id="page1" alignment="CENTER" layoutX="14.0" layoutY="14.0" onMouseClicked="#page1"
+                       prefHeight="49.0" prefWidth="180.0" styleClass="labe" text="Book" textFill="WHITE"
+                       underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                    <graphic>
+                        <ImageView fx:id="pg1" fitHeight="34.0" fitWidth="34.0" pickOnBounds="true"
+                                   preserveRatio="true"/>
+                    </graphic>
+                </Label>
+                <Label fx:id="page2" alignment="CENTER" layoutX="14.0" layoutY="63.0" onMouseClicked="#page2"
+                       prefHeight="49.0" prefWidth="180.0" styleClass="labe" text="Page 2" textFill="WHITE"
+                       underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </Label>
+                <Label fx:id="page3" alignment="CENTER" onMouseClicked="#page3" prefHeight="49.0" prefWidth="170.0"
+                       styleClass="labe" text="Page 3" textFill="WHITE" underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </Label>
+                <Label fx:id="page4" alignment="CENTER" onMouseClicked="#page4" prefHeight="49.0" prefWidth="170.0"
+                       styleClass="labe" text="Page 4" textFill="WHITE" underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </Label>
+                <Label fx:id="page5" alignment="CENTER" onMouseClicked="#page5" prefHeight="49.0" prefWidth="170.0"
+                       styleClass="labe" text="Get Details" textFill="WHITE" underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </Label>
+                <Label fx:id="page6" alignment="CENTER" onMouseClicked="#page6" prefHeight="49.0" prefWidth="170.0"
+                       styleClass="labe" textFill="WHITE" underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                    <graphic>
+                        <ImageView fx:id="pg6" fitHeight="74.0" fitWidth="75.0" pickOnBounds="true"
+                                   preserveRatio="true"/>
+                    </graphic>
+                </Label>
+                <Label fx:id="page7" alignment="CENTER" onMouseClicked="#page7" prefHeight="49.0" prefWidth="170.0"
+                       styleClass="labe" text="Page 7" textFill="WHITE" underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </Label>
+            </children>
+        </VBox>
+        <Pane fx:id="changePane" layoutX="180.0" prefHeight="700.0" prefWidth="900.0" styleClass="changePane"/>
+    </children>
+</AnchorPane>

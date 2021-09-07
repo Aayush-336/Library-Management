@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="506.0" prefWidth="635.0"
+            style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8"
+            fx:controller="aboutusController"
+            fx:id="mainPane">
+    <children>
+        <Label alignment="TOP_CENTER" layoutX="6.0" layoutY="388.0" prefHeight="33.0" prefWidth="659.0"
+               text="Created By:- Ayush Shah , Jaydev Bhatt , Devansh Shah , Nirav Patel">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="-1.0" layoutY="2.0" prefHeight="31.0" prefWidth="668.0"
+               style="-fx-background-color: lightblue;" text="About Us">
+            <textFill>
+                <LinearGradient endX="0.8009708737864079" endY="0.5825242718446602" startX="0.26699029126213597"
+                                startY="0.05339805825242716">
+                    <stops>
+                        <Stop color="#4006ee"/>
+                        <Stop color="#0de805" offset="1.0"/>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+            <font>
+                <Font name="System Bold" size="36.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="14.0" layoutY="61.0" prefHeight="50.0" prefWidth="659.0"
+               text="Library Management System">
+            <textFill>
+                <LinearGradient endX="1.0" endY="0.21359223300970875" startX="0.07281553398058255"
+                                startY="0.9077669902912622">
+                    <stops>
+                        <Stop color="#eb079f"/>
+                        <Stop color="#7505f5" offset="1.0"/>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+            <font>
+                <Font name="System Bold" size="37.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="255.0" layoutY="115.0" prefHeight="33.0" prefWidth="164.0" text="v1.1">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="0.21359223300970875" startX="0.07281553398058255"
+                                startY="0.9077669902912622">
+                    <stops>
+                        <Stop color="#eb079f"/>
+                        <Stop color="#7505f5" offset="1.0"/>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <Label alignment="CENTER" layoutX="29.0" layoutY="426.0" prefHeight="41.0" prefWidth="611.0"
+               text="Government Engineering College , Sector - 28 , Gandhinagar"/>
+        <Label alignment="CENTER" layoutX="138.0" layoutY="474.0" prefHeight="33.0" prefWidth="402.0"
+               text="All rights reserved"/>
+        <ImageView fitHeight="186.0" fitWidth="221.0" layoutX="229.0" layoutY="161.0" pickOnBounds="true"
+                   preserveRatio="true"/>
+    </children>
+</AnchorPane>

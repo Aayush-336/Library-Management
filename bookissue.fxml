@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" fx:controller="issuecontroller">
+    <children>
+        <Label layoutX="263.0" layoutY="35.0" prefHeight="34.0" prefWidth="140.0" text="Issue Book ">
+            <font>
+                <Font name="Agency FB Bold" size="23.0"/>
+            </font>
+        </Label>
+        <HBox layoutX="67.0" layoutY="102.0">
+            <children>
+                <Label layoutX="47.0" layoutY="102.0" prefHeight="24.0" prefWidth="47.0" text="B. id"/>
+                <TextField fx:id="bookid" layoutX="141.0" layoutY="102.0" prefHeight="24.0" prefWidth="140.0"/>
+                <Button mnemonicParsing="false" onAction="#search" text="Search"/>
+            </children>
+        </HBox>
+        <HBox layoutX="347.0" layoutY="102.0">
+            <children>
+                <Label layoutX="344.0" layoutY="106.0" prefHeight="17.0" prefWidth="26.0" text="S.id"/>
+                <TextField fx:id="studentid" layoutX="370.0" layoutY="102.0" prefHeight="24.0" prefWidth="140.0"/>
+                <Button mnemonicParsing="false" onAction="#search" text="Search"/>
+            </children>
+        </HBox>
+        <HBox layoutX="46.0" layoutY="170.0">
+            <children>
+                <Label layoutX="46.0" layoutY="174.0" text="Author name"/>
+                <TextField fx:id="author" layoutX="141.0" layoutY="170.0" prefHeight="24.0" prefWidth="140.0"/>
+            </children>
+        </HBox>
+        <HBox layoutX="86.0" layoutY="206.0">
+            <children>
+                <Label layoutX="46.0" layoutY="207.0" prefHeight="21.0" prefWidth="40.0" text="Price"/>
+                <TextField fx:id="price" layoutX="72.0" layoutY="207.0" prefHeight="24.0" prefWidth="140.0"/>
+            </children>
+        </HBox>
+        <HBox layoutX="184.0" layoutY="265.0" prefHeight="31.0" prefWidth="308.0">
+            <children>
+                <Label layoutX="166.0" layoutY="102.0" prefHeight="24.0" prefWidth="78.0" text="Issued date"/>
+                <DatePicker fx:id="issuedate" layoutX="246.0" layoutY="274.0"/>
+            </children>
+        </HBox>
+        <HBox layoutX="333.0" layoutY="136.0">
+            <children>
+                <Label layoutX="346.0" layoutY="140.0" text="S.name"/>
+                <TextField fx:id="studentname" layoutX="403.0" layoutY="136.0" prefHeight="24.0" prefWidth="140.0"/>
+            </children>
+        </HBox>
+        <HBox layoutX="334.0" layoutY="170.0">
+            <children>
+                <Label layoutX="344.0" layoutY="174.0" text="Stream"/>
+                <TextField fx:id="stream" layoutX="403.0" layoutY="170.0" prefHeight="24.0" prefWidth="140.0"/>
+            </children>
+        </HBox>
+        <HBox layoutX="67.0" layoutY="136.0" prefHeight="25.0" prefWidth="187.0">
+            <children>
+                <Label prefHeight="21.0" prefWidth="63.0" text="B name"/>
+                <TextField fx:id="bookname" layoutX="92.0" layoutY="133.0" prefHeight="25.0" prefWidth="140.0"/>
+            </children>
+        </HBox>
+        <HBox layoutX="184.0" layoutY="296.0">
+            <children>
+                <Label layoutX="184.0" layoutY="304.0" text="Return date   "/>
+                <DatePicker fx:id="rdate" layoutX="263.0" layoutY="300.0"/>
+            </children>
+            <padding>
+                <Insets top="10.0"/>
+            </padding>
+        </HBox>
+        <Button layoutX="267.0" layoutY="351.0" mnemonicParsing="false" onAction="#submit" prefHeight="41.0"
+                prefWidth="100.0" text="Submit"/>
+        <Button layoutX="480.0" layoutY="351.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0"
+                text="Reset"/>
+    </children>
+</AnchorPane>

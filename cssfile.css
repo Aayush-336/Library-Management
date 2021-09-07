@@ -1,0 +1,33 @@
+.labe:hover
+{
+    -fx-text-fill:white;
+    -fx-background-color : green;
+}
+.labe
+{
+    -fx-text-fill:white;
+    -fx-background-color : transparent;
+    -fx-font-size : 20;
+}
+.sel
+{
+-fx-text-fill : black;
+-fx-background-color : white;
+}
+.sel:hover
+{
+-fx-text-fill:black;
+-fx-background-color:white;
+}
+VBox
+{
+-fx-background-color : darkblue;
+}
+.changePane
+{
+    -fx-background-color :lightblue;
+}
+AnchorPane
+{
+-fx-background-color : lightblue;
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="529.0" prefWidth="732.0"
+            style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8" fx:controller="SignupController">
+    <children>
+        <Label alignment="CENTER" layoutY="-2.0" prefHeight="80.0" prefWidth="732.0"
+               style="-fx-background-color: lightblue;" text="Sign Up Page" textFill="#2108dd">
+            <font>
+                <Font name="System Bold" size="36.0"/>
+            </font>
+        </Label>
+        <Label fx:id="registrationmessegelabel" alignment="CENTER" layoutX="44.0" layoutY="68.0" prefHeight="21.0"
+               prefWidth="637.0" textFill="#e10606">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="109.0" prefHeight="31.0" prefWidth="95.0" text="ID">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="159.0" prefHeight="31.0" prefWidth="95.0" text="First Name">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="210.0" prefHeight="31.0" prefWidth="114.0" text="Middle Name">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="260.0" prefHeight="31.0" prefWidth="95.0" text="Last Name">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="306.0" prefHeight="31.0" prefWidth="95.0" text="Username">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="347.0" prefHeight="31.0" prefWidth="84.0" text="Password">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="388.0" prefHeight="31.0" prefWidth="152.0" text="Confirm password">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="firstnametextfield" layoutX="206.0" layoutY="159.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="Enter your First Name"/>
+        <TextField fx:id="middlenametextfield" layoutX="206.0" layoutY="210.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="Enter your middle name"/>
+        <TextField fx:id="lastnametextfield" layoutX="206.0" layoutY="260.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="Enter your last name"/>
+        <TextField fx:id="usernametextfield" layoutX="206.0" layoutY="306.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="create  username"/>
+        <TextField fx:id="idtextfield" layoutX="206.0" layoutY="109.0" prefHeight="31.0" prefWidth="407.0"
+                   promptText="Enter ID"/>
+        <PasswordField fx:id="setpasswordfield" layoutX="206.0" layoutY="347.0" prefHeight="31.0" prefWidth="407.0"
+                       promptText="Create password"/>
+        <PasswordField fx:id="confirmpassword" layoutX="206.0" layoutY="388.0" prefHeight="31.0" prefWidth="407.0"
+                       promptText="Confirm password"/>
+        <Label fx:id="pswmatching" alignment="CENTER" layoutX="248.0" layoutY="430.0" prefHeight="27.0"
+               prefWidth="225.0" textFill="#e10606">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Label>
+        <HBox layoutX="12.0" layoutY="471.0" spacing="100.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="114.0" text="Back"/>
+                <Button fx:id="registerbutton" mnemonicParsing="false" onAction="#registerbuttonOnAction"
+                        prefHeight="31.0" prefWidth="275.0" text="Register"/>
+                <Button fx:id="closebutton" mnemonicParsing="false" onAction="#closebuttonOnAction" prefHeight="31.0"
+                        prefWidth="95.0" text="Close"/>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="327.0" prefWidth="484.0"
+            style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8"
+            fx:controller="found_book_controller">
+    <children>
+        <Label layoutX="173.0" layoutY="35.0" prefHeight="38.0" prefWidth="181.0" text="**Book Id is matched**"
+               textAlignment="CENTER" textFill="#f81c1c">
+            <font>
+                <Font name="AdobePiStd" size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="139.0" layoutY="122.0" text="Book id"/>
+        <TextField fx:id="bookid" layoutX="215.0" layoutY="118.0"/>
+        <Label layoutX="139.0" layoutY="160.0" text="Quantity"/>
+        <TextField fx:id="qty" layoutX="215.0" layoutY="155.0" promptText="Quantity"/>
+        <Button fx:id="submitButton" layoutX="216.0" layoutY="227.0" mnemonicParsing="false" onAction="#submit"
+                text="Submit"/>
+        <Label fx:id="confirmationLabel" layoutX="208.0" layoutY="272.0" text="Quantity" textFill="RED">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+        </Label>
+
+    </children>
+</AnchorPane>
